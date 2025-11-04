@@ -5,14 +5,18 @@
   --reserve-blue: hsl(220, 100%, 40%);
   --light-blue: hsl(155, 26%, 91%);
   --border-blue: hsl(173, 31%, 80%);
-  --gray-text: hsl(220, 9%, 46%);
+  --light-border-blue: hsl(173, 56%, 94%);
+  --bg-light-blue:  hsl(180, 10%, 89%);
+  --gray-text: hsl(240, 9%, 38%);
   --dark-gray-text: hsl(220, 14%, 36%);
   --light-gray-text: hsl(224, 24%, 90%);
   --light: hsl(220, 14%, 95%);
   --beige: hsl(25, 83%, 97%);
+  --light-beige: hsl(20, 33%, 96%);
   --main-title: hsl(215, 28%, 17%);
   --dark: hsl(215, 16%, 12%); 
   --very-dark: hsl(210, 18%, 4%);
+  --highlight:  hsl(200, 60%, 99%);
 
 
   --border: hsla(220, 7%, 84%, 0.557);
