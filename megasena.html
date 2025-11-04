@@ -76,10 +76,10 @@
       <section class="contest-result">
         <div class="contest-setting">
           <div class="contest-info">
-            <h3 class="prize-draw">Concurso 2654</h3>
+            <h3 class="prize-draw">Concurso <span id="contest-number"></span></h3>
             <span class="calendary">
               <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="date-time">24/10/2025</time>
+              <time datetime="" id="date"></time>
             </span>
           </div>
           <div>
@@ -92,25 +92,25 @@
         <div class="result-numbers">
           <h4 class="draw-numbers">Números Sorteados</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+          <ul id="numbers-list">
+            <li class="numbers" name="number"></li>
+            <li class="numbers" name="number"></li>
+            <li class="numbers" name="number"></li>
+            <li class="numbers" name="number"></li>
+            <li class="numbers" name="number"></li>
+            <li class="numbers" name="number"></li>
           </ul>
         </div>
 
         <div class="winner-prize">
           <div class="winners">
             <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result">0</h4>
+            <h4 class="result" id="result">0</h4>
           </div>
 
           <div class="prize">
             <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount">R$ 45.000.000,00</h4>
+            <h4 class="prize-amount" id="prize">R$ 45.000.000,00</h4>
           </div>
         </div>
       </section>
@@ -284,5 +284,6 @@
     </footer>
 
     <script type="module" src="./src/scripts/javascript/index.js"></script>
+    <script type="module" src="./src/scripts/javascript/utils/megasena.js"></script>
   </body>
 </html>
