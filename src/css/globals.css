@@ -5,6 +5,20 @@ html {
   font-size: 62.5%;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   background: var(--background) center center no-repeat;
   width: 100vw;
