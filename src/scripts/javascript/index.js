@@ -16,8 +16,6 @@ function init() {
   setDataContest("timemania");
   setDataContest("duplasena");
   }
-  
-  
 }
 init();
 
