@@ -7,14 +7,16 @@ function init() {
   getLotery();
   getMegaSena();
 
-  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
-
+  if (
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname === "/"
+  ) {
     setDataContest("megasena");
-  setDataContest("quina");
-  setDataContest("lotofacil");
-  setDataContest("lotomania");
-  setDataContest("timemania");
-  setDataContest("duplasena");
+    setDataContest("quina");
+    setDataContest("lotofacil");
+    setDataContest("lotomania");
+    setDataContest("timemania");
+    setDataContest("duplasena");
   }
 }
 init();
@@ -42,7 +44,7 @@ async function setDataContest(gameName) {
     const response = await fetch(`${BASE_API}/${gameName}/latest`);
     const data = await response.json();
 
-    const element = document.getElementById(`next-${gameName}`);   
+    const element = document.getElementById(`next-${gameName}`);
 
     element.textContent = data.dataProximoConcurso || "Data indisponível";
   } catch (error) {
