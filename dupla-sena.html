@@ -22,7 +22,7 @@
 
     <title>Caixa Lottery Games</title>
   </head>
-  <body>
+  <body data-page="duplasena">
     <nav class="navbar">
       <div class="navbar-container">
         <a href="/" class="navbar-logo">
@@ -77,10 +77,10 @@
       <section class="contest-result dupla">
         <div class="contest-setting">
           <div class="contest-info">
-            <h3 class="prize-draw">Concurso 2654</h3>
+            <h3 class="prize-draw">Concurso <span id="duplasena-contest-number"></span></h3>
             <span class="calendary">
               <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="date-time">24/10/2025</time>
+              <time datetime="" id="duplasena-date"></time>
             </span>
           </div>
           <div>
@@ -93,37 +93,37 @@
         <div class="result-numbers">
           <h4 class="draw-numbers">1° Sorteio</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+          <ul id="first-list-draw">
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
           </ul>
         </div>
         <div class="result-numbers">
           <h4 class="draw-numbers">2° Sorteio</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+          <ul  id="second-list-draw">
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
           </ul>
         </div>
 
         <div class="winner-prize dupla">
           <div class="winners">
             <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result">0</h4>
+            <h4 class="result" id="duplasena-result"></h4>
           </div>
 
           <div class="prize">
             <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount">R$ 45.000.000,00</h4>
+            <h4 class="prize-amount" id="duplasena-prize"></h4>
           </div>
         </div>
       </section>
@@ -132,12 +132,12 @@
         <h3 class="previous-draw-title">Sorteios Anteriores</h3>
 
         <ol>
-          <li class="previous-draw-result">
+          <li class="previous-draw-result duplasena-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2653</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">24/10/2025</time>
+                <time datetime="" class="date-time">24/10/2025</time>
               </span>
             </div>
             <div class="draw-numbers">
@@ -146,34 +146,34 @@
                     1° Sorteio
                 </h4>
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
 
               <h4 class="draw-title">
                     2° Sorteio
                 </h4>
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
 
-          <li class="previous-draw-result">
+          <li class="previous-draw-result duplasena-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2652</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">23/10/2025</time>
+                <time datetime="" class="date-time">23/10/2025</time>
               </span>
             </div>
             <div class="draw-numbers">
@@ -182,33 +182,34 @@
                     1° Sorteio
                 </h4>
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
 
               <h4 class="draw-title">
-                    1° Sorteio
+                    2° Sorteio
                 </h4>
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
-          <li class="previous-draw-result dupla">
+
+          <li class="previous-draw-result duplasena-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2651</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">22/10/2025</time>
+                <time datetime="" class="date-time">22/10/2025</time>
               </span>
             </div>
             <div class="draw-numbers">
@@ -216,24 +217,24 @@
                     1° Sorteio
                 </h4>
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
 
               <h4 class="draw-title">
-                    1° Sorteio
+                    2° Sorteio
                 </h4>
                <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li> 
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
@@ -340,5 +341,6 @@
     </footer>
 
     <script type="module" src="./src/scripts/javascript/index.js"></script>
+    <script type="module" src="./src/scripts/javascript/utils/getGames.js"></script>
   </body>
 </html>

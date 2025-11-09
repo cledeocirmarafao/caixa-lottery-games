@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="./src/css/pages/megasena/contest.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/contest-result.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/previous-draw.css" />
-    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css">
-    <link rel="stylesheet" href="./src/css/pages/lotofacil/lotofacil.css">
+    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css" />
+    <link rel="stylesheet" href="./src/css/pages/lotofacil/lotofacil.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <title>Caixa Lottery Games</title>
   </head>
-  <body>
+  <body data-page="lotofacil">
     <nav class="navbar">
       <div class="navbar-container">
         <a href="/" class="navbar-logo">
@@ -69,18 +69,18 @@
 
         <h1 class="title">Lotofácil</h1>
 
-        <p class="text">
-          Fácil de ganhar, difícil de esquecer
-        </p>
+        <p class="text">Fácil de ganhar, difícil de esquecer</p>
       </section>
 
       <section class="contest-result">
         <div class="contest-setting">
           <div class="contest-info">
-            <h3 class="prize-draw">Concurso 2654</h3>
+            <h3 class="prize-draw">
+              Concurso <span id="lotofacil-contest-number"></span>
+            </h3>
             <span class="calendary">
               <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="date-time">24/10/2025</time>
+              <time datetime="" id="lotofacil-date"></time>
             </span>
           </div>
           <div>
@@ -93,34 +93,34 @@
         <div class="result-numbers lotofacil">
           <h4 class="draw-numbers">Números Sorteados</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
+          <ul id="lotofacil-numbers-list">
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
           </ul>
         </div>
 
         <div class="winner-prize lotofacil">
           <div class="winners">
             <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result">0</h4>
+            <h4 class="result" id="lotofacil-result"></h4>
           </div>
 
           <div class="prize">
             <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount">R$ 45.000.000,00</h4>
+            <h4 class="prize-amount" id="lotofacil-prize"></h4>
           </div>
         </div>
       </section>
@@ -129,88 +129,94 @@
         <h3 class="previous-draw-title">Sorteios Anteriores</h3>
 
         <ol>
-          <li class="previous-draw-result">
+          <li class="previous-draw-result lotofacil-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2653</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">24/10/2025</time>
+                <time class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
 
-          <li class="previous-draw-result">
+          <li class="previous-draw-result lotofacil-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2652</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">23/10/2025</time>
+                <time class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                 <li class="numbers">07</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
-          <li class="previous-draw-result lotofacil">
+          <li class="previous-draw-result lotofacil-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2651</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">22/10/2025</time>
+                <time class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
@@ -220,12 +226,16 @@
       <section class="how-to-bet">
         <h3 class="title-bet">Como Apostar</h3>
         <p class="bet-paragraph">
-          A Lotofácil, como o nome já diz, é muito fácil de apostar e ganhar. Você marca entre 15 e 20 números, dentre os 25 disponíveis no volante.
+          A Lotofácil, como o nome já diz, é muito fácil de apostar e ganhar.
+          Você marca entre 15 e 20 números, dentre os 25 disponíveis no volante.
         </p>
         <p class="bet-paragraph">
-          Ganha prêmios quem acerta 11, 12, 13, 14 ou 15 números. A loteria que mais paga prêmios no Brasil!
+          Ganha prêmios quem acerta 11, 12, 13, 14 ou 15 números. A loteria que
+          mais paga prêmios no Brasil!
         </p>
-        <span class="draw-day"><strong>Sorteios: de Segunda a Sábado às 20h</strong></span>
+        <span class="draw-day"
+          ><strong>Sorteios: de Segunda a Sábado às 20h</strong></span
+        >
       </section>
     </main>
 

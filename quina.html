@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="./src/css/pages/megasena/contest.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/contest-result.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/previous-draw.css" />
-    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css">
-    <link rel="stylesheet" href="./src/css/pages/quina/quina.css">
+    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css" />
+    <link rel="stylesheet" href="./src/css/pages/quina/quina.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <title>Caixa Lottery Games</title>
   </head>
-  <body>
+  <body data-page="quina">
     <nav class="navbar">
       <div class="navbar-container">
         <a href="/" class="navbar-logo">
@@ -69,18 +69,18 @@
 
         <h1 class="title">Quina</h1>
 
-        <p class="text">
-          Sorteios diários com prêmios incríveis
-        </p>
+        <p class="text">Sorteios diários com prêmios incríveis</p>
       </section>
 
       <section class="contest-result quina">
         <div class="contest-setting">
           <div class="contest-info">
-            <h3 class="prize-draw">Concurso 2654</h3>
+            <h3 class="prize-draw">
+              Concurso <span id="quina-contest-number"></span>
+            </h3>
             <span class="calendary">
               <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="date-time">24/10/2025</time>
+              <time datetime="" id="quina-date"></time>
             </span>
           </div>
           <div>
@@ -93,24 +93,24 @@
         <div class="result-numbers">
           <h4 class="draw-numbers">Números Sorteados</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
+          <ul id="quina-numbers-list">
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
           </ul>
         </div>
 
         <div class="winner-prize quina">
           <div class="winners">
             <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result">0</h4>
+            <h4 class="result" id="quina-result"></h4>
           </div>
 
           <div class="prize">
             <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount">R$ 45.000.000,00</h4>
+            <h4 class="prize-amount" id="quina-prize"></h4>
           </div>
         </div>
       </section>
@@ -119,61 +119,65 @@
         <h3 class="previous-draw-title">Sorteios Anteriores</h3>
 
         <ol>
-          <li class="previous-draw-result">
+          <li class="previous-draw-result quina-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2653</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">24/10/2025</time>
+                <time datetime="" class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
 
-          <li class="previous-draw-result">
+          <li class="previous-draw-result quina-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2652</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">23/10/2025</time>
+                <time datetime="" class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
-          <li class="previous-draw-result">
+
+          <li class="previous-draw-result quina-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2651</h4>
+              <h4 class="previous--draw">
+                Concurso <span class="previous__draw"></span>
+              </h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">22/10/2025</time>
+                <time datetime="" class="date-time"></time>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
@@ -183,12 +187,17 @@
       <section class="how-to-bet">
         <h3 class="title-bet">Como Apostar</h3>
         <p class="bet-paragraph">
-          A Quina tem sorteios todos os dias da semana, sempre às 20h. Para apostar, você escolhe de 5 a 15 números dentre os 80 disponíveis no volante.
+          A Quina tem sorteios todos os dias da semana, sempre às 20h. Para
+          apostar, você escolhe de 5 a 15 números dentre os 80 disponíveis no
+          volante.
         </p>
         <p class="bet-paragraph">
-         Ganha quem acertar 2, 3, 4 ou 5 números. Quanto mais números você escolher, maior a chance de ganhar e maior o valor da aposta.
+          Ganha quem acertar 2, 3, 4 ou 5 números. Quanto mais números você
+          escolher, maior a chance de ganhar e maior o valor da aposta.
         </p>
-        <span class="draw-day"><strong>Sorteios: Todos os dias às 20h</strong></span>
+        <span class="draw-day"
+          ><strong>Sorteios: Todos os dias às 20h</strong></span
+        >
       </section>
     </main>
 

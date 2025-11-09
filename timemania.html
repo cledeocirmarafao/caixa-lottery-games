@@ -22,7 +22,7 @@
 
     <title>Caixa Lottery Games</title>
   </head>
-  <body>
+  <body data-page="timemania">
     <nav class="navbar">
       <div class="navbar-container">
         <a href="/" class="navbar-logo">
@@ -77,10 +77,10 @@
       <section class="contest-result timemania">
         <div class="contest-setting">
           <div class="contest-info">
-            <h3 class="prize-draw">Concurso 2654</h3>
+            <h3 class="prize-draw">Concurso <span id="timemania-contest-number"></span></h3>
             <span class="calendary">
               <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="date-time">24/10/2025</time>
+              <time id="timemania-date"></time>
             </span>
           </div>
           <div>
@@ -93,21 +93,20 @@
         <div class="result-numbers">
           <h4 class="draw-numbers">Números Sorteados</h4>
 
-          <ul>
-            <li class="numbers">07</li>
-            <li class="numbers">07</li>
-            <li class="numbers">15</li>
-            <li class="numbers">23</li>
-            <li class="numbers">32</li>
-            <li class="numbers">41</li>
-            <li class="numbers">56</li>
+          <ul id="timemania-numbers-list">
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
+            <li class="numbers"></li>
           </ul>
           <h4 class="draw-team">
             Time Sorteado
           </h4>
           <div class="team">
-            <span class="team-draw">
-              Flamengo / RJ
+            <span class="team-draw" id="team-draw">
             </span>
           </div>
         </div>
@@ -115,12 +114,12 @@
         <div class="winner-prize">
           <div class="winners">
             <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result">0</h4>
+            <h4 class="result" id="timemania-result"></h4>
           </div>
 
           <div class="prize">
             <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount">R$ 45.000.000,00</h4>
+            <h4 class="prize-amount" id="timemania-prize"></h4>
           </div>
         </div>
       </section>
@@ -129,75 +128,75 @@
         <h3 class="previous-draw-title">Sorteios Anteriores</h3>
 
         <ol>
-          <li class="previous-draw-result">
+          <li class="previous-draw-result timemania-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2653</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">24/10/2025</time>
+                <time class="date-time"></time>
               </span>
               <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> Flamengo / RJ
+                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
               </span>
             </div>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
-                <li class="numbers">07</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
 
-          <li class="previous-draw-result">
+          <li class="previous-draw-result timemania-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2652</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">23/10/2025</time>
+                <time class="date-time"></time>
               </span>
               <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> Flamengo / RJ
+                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
               </span>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">44</li>
-                <li class="numbers">07</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
-          <li class="previous-draw-result">
+          <li class="previous-draw-result timemania-previous-result">
             <div class="previous">
-              <h4 class="previous--draw">Concurso 2651</h4>
+              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
               <span class="calendary">
                 <i class="fa-regular fa-calendar"></i>
-                <time datetime="" id="date-time">22/10/2025</time>
+                <time class="date-time"></time>
               </span>
               <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> Flamengo / RJ
+                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
               </span>
             </div>
             </div>
             <div class="draw-numbers">
               <ul class="row">
-                <li class="numbers">04</li>
-                <li class="numbers">12</li>
-                <li class="numbers">28</li>
-                <li class="numbers">35</li>
-                <li class="numbers">07</li>
-                <li class="numbers">44</li>
-                <li class="numbers">59</li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
+                <li class="numbers numbers-result"></li>
               </ul>
             </div>
           </li>
@@ -304,5 +303,6 @@
     </footer>
 
     <script type="module" src="./src/scripts/javascript/index.js"></script>
+    <script src="./src/scripts/javascript/utils/timemania.js"></script>
   </body>
 </html>
