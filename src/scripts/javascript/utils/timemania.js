@@ -14,7 +14,7 @@ async function getTimemania() {
 
   results.forEach((block, i) => {
     if (block) {
-      block.textContent = teamFilter.team;
+      block.textContent = data[i].timeCoracao;
     }
   });
 }
