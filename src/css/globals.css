@@ -55,6 +55,26 @@ ol{
   margin: 1rem;
 }
 
-/* .quina .card-image{
+.quina .card-image{
     filter: drop-shadow(2px 4px 6px var(--quina));
-} */
+}
+
+.lotofacil .card-image{
+    filter: drop-shadow(2px 4px 6px var(--lotofacil));
+}
+
+.mega-sena .card-image{
+    filter: drop-shadow(2px 4px 6px var(--mega-sena));
+}
+
+.lotomania .card-image{
+    filter: drop-shadow(2px 4px 6px var(--lotomania));
+}
+
+.dupla-sena .card-image{
+    filter: drop-shadow(2px 4px 6px var(--dupla-sena));
+}
+
+.timemania .card-image{
+    filter: drop-shadow(2px 4px 6px var(--timemania));
+}
