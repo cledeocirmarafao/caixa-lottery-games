@@ -26,7 +26,7 @@
     }
 
     .warning-description{
-        font-size: clamp(1rem, 5vh, 1.8rem);
+        font-size: clamp(1rem, 5vh, 1.6rem);
         font-weight: 400;
         font-family: var(--secondary-font);
         color: var(--gray-text);
