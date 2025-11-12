@@ -2,43 +2,44 @@ import { getGame } from "./utils/getGames.js";
 import { menu } from "./utils/navbar.js";
 menu();
 import { getDuplasena } from "./utils/duplasena.js";
+import { hamburguer } from "./utils/hamburguer.js";
 
 const BASE_API = "https://loteriascaixa-api.herokuapp.com/api";
 
 function init() {
-  document.addEventListener('DOMContentLoaded', () => {
-    const currentPage = document.body.dataset.page
-
+  document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = document.body.dataset.page;
+    hamburguer();
     switch (currentPage) {
       case "duplasena":
-        getDuplasena()
+        getDuplasena();
         break;
 
-        case "megasena":
-          getGame("megasena");
-        break
-    
-        case "quina":
-          getGame("quina");
-        break
+      case "megasena":
+        getGame("megasena");
+        break;
 
-        case "lotofacil":
-          getGame("lotofacil");
-        break
+      case "quina":
+        getGame("quina");
+        break;
 
-         case "lotomania":
-          getGame("lotomania");
-        break
+      case "lotofacil":
+        getGame("lotofacil");
+        break;
 
-        case "timemania":
-          getGame("timemania");
-        break
+      case "lotomania":
+        getGame("lotomania");
+        break;
+
+      case "timemania":
+        getGame("timemania");
+        break;
 
       default:
-        console.warn('Nenhuma função especifica para está página');  
+        console.warn("Nenhuma função especifica para está página");
         break;
     }
-  })
+  });
   getLotery();
 
   if (
@@ -58,8 +59,8 @@ init();
 async function getLotery() {
   try {
     const response = await fetch(`${BASE_API}`);
-    const data = await response.json()
-    return data
+    const data = await response.json();
+    return data;
   } catch (error) {
     console.log("Erro ao buscar os jogos:", error);
   }
