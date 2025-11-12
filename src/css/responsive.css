@@ -1,18 +1,71 @@
+@media (min-width: 1400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .contest-result {
+    .winner-prize {
+      flex-direction: column;
+    }
+  }
   .previous-draw-result {
     flex-direction: column;
     gap: 1rem;
   }
 
   .previous-draws.timemania {
-  .previous-draw-result {
-    align-items: normal;
+    .previous-draw-result {
+      align-items: normal;
+    }
+  }
+
+  .html-profile {
+    .contact-support {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  .hero {
+    .hero-subtitle {
+      padding: 1.5rem;
+    }
+  }
+
+  .footer {
+    .footer-content {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1.5rem;
+
+      .footer-title {
+        margin-bottom: 0;
+      }
+
+      .footer-social ul {
+        width: 40%;
+        padding-top: 1rem;
+      }
+    }
   }
 }
 
-  .html-profile{
-    .contact-support{
-      grid-template-columns: repeat(1, minmax(0, 1fr));
+@media (max-width: 460px) {
+  .footer {
+    .footer-content {
+      .footer-info p {
+        margin-right: 1rem;
+      }
+    }
+    .copyright {
+      align-items: normal;
     }
   }
 }

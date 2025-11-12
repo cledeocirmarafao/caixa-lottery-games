@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 2.5rem 1rem;
-    /* font-size: 1.4rem; */
+    font-size: clamp(1rem, 2vw, 1.rem);
     border-top: 1px solid var(--border);
 
     .footer-title {
@@ -90,6 +90,7 @@
   .author{
     font-family: var(--primary-font);
     color: var(--gray-text);
+    text-align: center;
     
     a{
         color: var(--main-blue);
