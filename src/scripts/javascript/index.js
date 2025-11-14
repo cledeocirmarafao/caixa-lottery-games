@@ -22,6 +22,14 @@ function init() {
     hamburguer();
     switch (currentPage) {
       case "home":
+
+  setDataContest("megasena");
+  setDataContest("quina");
+  setDataContest("lotofacil");
+  setDataContest("lotomania");
+  setDataContest("timemania");
+  setDataContest("duplasena");
+
         renderHome();
         break;
 
@@ -65,18 +73,6 @@ function init() {
     }
   });
   getLotery();
-
-  if (
-    window.location.pathname.endsWith("index.html") ||
-    window.location.pathname === "/"
-  ) {
-    setDataContest("megasena");
-    setDataContest("quina");
-    setDataContest("lotofacil");
-    setDataContest("lotomania");
-    setDataContest("timemania");
-    setDataContest("duplasena");
-  }
 }
 init();
 
