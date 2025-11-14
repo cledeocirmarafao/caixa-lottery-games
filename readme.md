@@ -87,7 +87,7 @@ Dentro da API existem outros recursos que não foram utilizados neste Desenvolvi
 
 > 🌐 [Deploy do Projeto](#) 
 
-[![Link](https://img.shields.io/badge/🔗-Acesse%20aqui-blue?style=for-the-badge)](https://cledeocirmarafao.github.io/fetch-api-github/)
+[![Link](https://img.shields.io/badge/🔗-Acesse%20aqui-blue?style=for-the-badge)](https://cledeocirmarafao.github.io/caixa-lottery-games/)
 
 > 🖥️ [Hospedagem](#)
 
