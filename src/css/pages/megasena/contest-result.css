@@ -84,28 +84,30 @@
     border-top: 1px solid var(--border);
     padding-top: 1rem;
 
-    .winners, .prize{
-        background-color: var(--light-gray-text);
-        width: 100%;
-        text-align: center;
-        padding: 2rem;
-        margin: 1rem;
-        border-radius: 1rem;
+    .winners,
+    .prize {
+      background-color: var(--light-gray-text);
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+      margin: 1rem;
+      border-radius: 1rem;
 
-        .decoration{
-            color: var(--gray-text);
-            font-size: clamp(1rem, 3vw, 1.4rem);
-        }
+      .decoration {
+        color: var(--gray-text);
+        font-size: clamp(1rem, 3vw, 1.4rem);
+      }
 
-        .result, .prize-amount{
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
-            font-weight: 800;
-            margin-top: 0.5rem;
-        }
+      .result,
+      .prize-amount {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-weight: 800;
+        margin-top: 0.5rem;
+      }
 
-        .prize-amount{
-            color: var(--mega-sena-number);
-        }
+      .prize-amount {
+        color: var(--mega-sena-number);
+      }
     }
   }
 }

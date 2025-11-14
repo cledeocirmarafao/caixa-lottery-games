@@ -20,7 +20,7 @@
 
   .contact-support {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
     width: 85%;
     margin: 0 auto;
     justify-content: center;
@@ -73,8 +73,8 @@
             border-radius: 1rem;
             border: 1px solid var(--dark-border);
 
-            &:focus{
-              outline:1px solid var(--reserve-blue);
+            &:focus {
+              outline: 1px solid var(--reserve-blue);
             }
           }
 
@@ -100,7 +100,7 @@
         border: transparent;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
           opacity: 0.9;
         }
 
@@ -127,8 +127,6 @@
     border-radius: 1rem;
     padding: 2rem;
     gap: 3.5rem;
-
-   
 
     .contact {
       display: flex;
@@ -165,30 +163,30 @@
   }
 }
 
-.opening-hours{
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--dark-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--bg-light-blue);
+
+  .days-opening {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border: 1px solid var(--dark-border);
-    border-radius: 1rem;
-    padding: 2rem;
-    background-color: var(--bg-light-blue);
+    font-family: var(--secondary-font);
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-weight: 500;
 
-    .days-opening{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        font-family: var(--secondary-font);
-        font-size: clamp(1rem, 3vw, 1.4rem);
-        font-weight: 500;
-
-        .highlight{
-            color: var(--dark-gray-text);
-        }
+    .highlight {
+      color: var(--dark-gray-text);
     }
+  }
 }
 
-.alert{
+.alert {
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid var(--dark-border);
@@ -197,21 +195,21 @@
   font-weight: 500;
   font-size: clamp(1rem, 3vw, 1.3rem);
 
-  .alert-text{
+  .alert-text {
     color: var(--dark-gray-text);
   }
 
-  a{
+  a {
     color: var(--main-blue);
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
 }
 
 .address {
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      font-family: var(--primary-font);
-      color: var(--dark);
-    }
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-family: var(--primary-font);
+  color: var(--dark);
+}
