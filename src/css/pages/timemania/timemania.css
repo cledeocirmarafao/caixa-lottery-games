@@ -1,5 +1,12 @@
 .contest-result.timemania {
   .result-numbers {
+    ul {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
     .draw-team {
       font-size: clamp(1rem, 3vw, 1.4rem);
       text-transform: uppercase;
@@ -49,6 +56,14 @@
   }
 
   .draw-numbers {
+    .row {
+      padding-top: 2rem;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      
+    }
     .numbers {
       background-color: var(--timemania-number);
     }
