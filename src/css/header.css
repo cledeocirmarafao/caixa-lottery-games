@@ -18,7 +18,7 @@
       font-weight: 900;
       font-size: clamp(1.2rem, 2vw, 2.2rem);
       display: flex;
-        align-items: center;
+      align-items: center;
 
       .logo-icon {
         color: var(--light);
@@ -45,7 +45,7 @@
         .navbar-link {
           padding: clamp(0.5rem, 0.5vw, 1rem);
           border-radius: 1rem;
-              color: var(--main-title);
+          color: var(--main-title);
 
           &:hover:not(.active) {
             background-color: var(--light-gray-text);

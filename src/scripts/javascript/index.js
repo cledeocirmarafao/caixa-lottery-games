@@ -1,8 +1,18 @@
-import { getGame } from "./utils/getGames.js";
+import { getGame } from "./services/getGames.js";
 import { menu } from "./utils/navbar.js";
 menu();
 import { getDuplasena } from "./utils/duplasena.js";
 import { hamburguer } from "./utils/hamburguer.js";
+import {
+  renderHome,
+  renderDupla,
+  renderMegasena,
+  renderQuina,
+  renderLotofacil,
+  renderLotomania,
+  renderTimemania,
+  renderContact,
+} from "./utils/screen.js";
 
 const BASE_API = "https://loteriascaixa-api.herokuapp.com/api";
 
@@ -11,28 +21,42 @@ function init() {
     const currentPage = document.body.dataset.page;
     hamburguer();
     switch (currentPage) {
+      case "home":
+        renderHome();
+        break;
+
       case "duplasena":
         getDuplasena();
+        renderDupla();
         break;
 
       case "megasena":
         getGame("megasena");
+        renderMegasena();
         break;
 
       case "quina":
         getGame("quina");
+        renderQuina();
         break;
 
       case "lotofacil":
         getGame("lotofacil");
+        renderLotofacil();
         break;
 
       case "lotomania":
         getGame("lotomania");
+        renderLotomania();
         break;
 
       case "timemania":
         getGame("timemania");
+        renderTimemania();
+        break;
+
+      case "contact":
+        renderContact();
         break;
 
       default:

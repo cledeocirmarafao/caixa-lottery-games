@@ -7,7 +7,7 @@ html {
 
 .fade-in {
   opacity: 0;
-  transform: translateY(.8rem);
+  transform: translateY(0.8rem);
   animation: fadeIn 0.5s ease forwards;
 }
 
@@ -26,7 +26,7 @@ body {
   background-attachment: fixed;
 }
 
-button{
+button {
   border-style: solid;
 }
 
@@ -35,16 +35,16 @@ a {
   color: inherit;
 }
 
-ol{
+ol {
   list-style-type: none;
 }
 
 .calendary {
-        font-size: clamp(1rem, 3vw, 1.4rem);
-        color: var(--gray-text);
-      }
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  color: var(--gray-text);
+}
 
-.calendary i{
+.calendary i {
   margin-right: 1rem;
 }
 
@@ -55,26 +55,26 @@ ol{
   margin: 1rem;
 }
 
-.quina .card-image{
-    filter: drop-shadow(2px 4px 6px var(--quina));
+.quina .card-image {
+  filter: drop-shadow(2px 4px 6px var(--quina));
 }
 
-.lotofacil .card-image{
-    filter: drop-shadow(2px 4px 6px var(--lotofacil));
+.lotofacil .card-image {
+  filter: drop-shadow(2px 4px 6px var(--lotofacil));
 }
 
-.mega-sena .card-image{
-    filter: drop-shadow(2px 4px 6px var(--mega-sena));
+.mega-sena .card-image {
+  filter: drop-shadow(2px 4px 6px var(--mega-sena));
 }
 
-.lotomania .card-image{
-    filter: drop-shadow(2px 4px 6px var(--lotomania));
+.lotomania .card-image {
+  filter: drop-shadow(2px 4px 6px var(--lotomania));
 }
 
-.dupla-sena .card-image{
-    filter: drop-shadow(2px 4px 6px var(--dupla-sena));
+.dupla-sena .card-image {
+  filter: drop-shadow(2px 4px 6px var(--dupla-sena));
 }
 
-.timemania .card-image{
-    filter: drop-shadow(2px 4px 6px var(--timemania));
+.timemania .card-image {
+  filter: drop-shadow(2px 4px 6px var(--timemania));
 }

@@ -8,7 +8,11 @@
       src="https://kit.fontawesome.com/e946045f4a.js"
       crossorigin="anonymous"
     ></script>
-     <link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/x-icon"> 
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/globals.css" />
     <link rel="stylesheet" href="./src/css/variables.css" />
@@ -64,149 +68,7 @@
       </div>
     </nav>
 
-    <main id="html-profile" class="html-profile">
-      <section class="contest">
-        <img src="./src/assets/images/mega-sena.png" alt="" class="image" />
-
-        <h1 class="title">Mega-Sena</h1>
-
-        <p class="text">
-          Confira os números sorteados e concorra a prêmios milionários
-        </p>
-      </section>
-
-      <section class="contest-result">
-        <div class="contest-setting">
-          <div class="contest-info">
-            <h3 class="prize-draw">
-              Concurso <span id="megasena-contest-number"></span>
-            </h3>
-            <span class="calendary">
-              <i class="fa-regular fa-calendar"></i>
-              <time datetime="" id="megasena-date"></time>
-            </span>
-          </div>
-          <div>
-            <button class="refresh">
-              <i class="fa-solid fa-arrows-rotate"></i> Atualizar
-            </button>
-          </div>
-        </div>
-
-        <div class="result-numbers">
-          <h4 class="draw-numbers">Números Sorteados</h4>
-
-          <ul id="megasena-numbers-list">
-            <li class="numbers" data-role="number"></li>
-            <li class="numbers" data-role="number"></li>
-            <li class="numbers" data-role="number"></li>
-            <li class="numbers" data-role="number"></li>
-            <li class="numbers" data-role="number"></li>
-            <li class="numbers" data-role="number"></li>
-          </ul>
-        </div>
-
-        <div class="winner-prize">
-          <div class="winners">
-            <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result" id="megasena-result"></h4>
-          </div>
-
-          <div class="prize">
-            <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount" id="megasena-prize"></h4>
-          </div>
-        </div>
-      </section>
-
-      <section class="previous-draws">
-        <h3 class="previous-draw-title">Sorteios Anteriores</h3>
-
-        <ol>
-          <li class="previous-draw-result megasena-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">
-                Concurso <span class="previous__draw"></span>
-              </h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="previous-draw-result megasena-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">
-                Concurso <span class="previous__draw"></span>
-              </h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-          <li class="previous-draw-result megasena-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">
-                Concurso <span class="previous__draw"></span>
-              </h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="how-to-bet">
-        <h3 class="title-bet">Como Apostar</h3>
-        <p class="bet-paragraph">
-          A Mega-Sena paga milhões para o acertador dos 6 números sorteados.
-          Ainda é possível ganhar prêmios ao acertar 4 ou 5 números dentre os 60
-          disponíveis no volante de apostas.
-        </p>
-        <p class="bet-paragraph">
-          Para realizar o sonho de ser o próximo milionário, você deve marcar de
-          6 a 15 números do volante, podendo deixar que o sistema escolha os
-          números por meio da Surpresinha.
-        </p>
-        <span class="draw-day"
-          ><strong>Sorteios: Terças, Quintas e Sábados às 20h</strong></span
-        >
-      </section>
-    </main>
+    <main id="html-profile-megasena" class="html-profile"></main>
 
     <footer class="footer">
       <div class="footer-content">
@@ -296,9 +158,5 @@
     </footer>
 
     <script type="module" src="./src/scripts/javascript/index.js"></script>
-    <script
-      type="module"
-      src="./src/scripts/javascript/utils/getGames.js"
-    ></script>
   </body>
 </html>

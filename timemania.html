@@ -8,17 +8,21 @@
       src="https://kit.fontawesome.com/e946045f4a.js"
       crossorigin="anonymous"
     ></script>
-     <link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/x-icon"> 
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/globals.css" />
     <link rel="stylesheet" href="./src/css/variables.css" />
-    <link rel="stylesheet" href="./src/css/hamburguer.css">
+    <link rel="stylesheet" href="./src/css/hamburguer.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/contest.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/contest-result.css" />
     <link rel="stylesheet" href="./src/css/pages/megasena/previous-draw.css" />
-    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css">
-    <link rel="stylesheet" href="./src/css/pages/timemania/timemania.css">
+    <link rel="stylesheet" href="./src/css/pages/megasena/bet.css" />
+    <link rel="stylesheet" href="./src/css/pages/timemania/timemania.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
@@ -65,157 +69,7 @@
       </div>
     </nav>
 
-    <main id="html-profile" class="html-profile">
-      <section class="contest">
-        <img src="./src/assets/images/timemania.png" alt="" class="image" />
-
-        <h1 class="title">Timemania</h1>
-
-        <p class="text">
-         Concorra a prêmios e ainda ajude seu time do coração
-        </p>
-      </section>
-
-      <section class="contest-result timemania">
-        <div class="contest-setting">
-          <div class="contest-info">
-            <h3 class="prize-draw">Concurso <span id="timemania-contest-number"></span></h3>
-            <span class="calendary">
-              <i class="fa-regular fa-calendar"></i>
-              <time id="timemania-date"></time>
-            </span>
-          </div>
-          <div>
-            <button class="refresh">
-              <i class="fa-solid fa-arrows-rotate"></i> Atualizar
-            </button>
-          </div>
-        </div>
-
-        <div class="result-numbers">
-          <h4 class="draw-numbers">Números Sorteados</h4>
-
-          <ul id="timemania-numbers-list">
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-            <li class="numbers"></li>
-          </ul>
-          <h4 class="draw-team">
-            Time Sorteado
-          </h4>
-          <div class="team">
-            <span class="team-draw" id="team-draw">
-            </span>
-          </div>
-        </div>
-
-        <div class="winner-prize">
-          <div class="winners">
-            <span class="decoration"> Ganhadores (6 acertos) </span>
-            <h4 class="result" id="timemania-result"></h4>
-          </div>
-
-          <div class="prize">
-            <span class="decoration">Prêmio Acumulado</span>
-            <h4 class="prize-amount" id="timemania-prize"></h4>
-          </div>
-        </div>
-      </section>
-
-      <section class="previous-draws timemania">
-        <h3 class="previous-draw-title">Sorteios Anteriores</h3>
-
-        <ol>
-          <li class="previous-draw-result timemania-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-              <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
-              </span>
-            </div>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="previous-draw-result timemania-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-              <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
-              </span>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-          <li class="previous-draw-result timemania-previous-result">
-            <div class="previous">
-              <h4 class="previous--draw">Concurso <span class="previous__draw"></span></h4>
-              <span class="calendary">
-                <i class="fa-regular fa-calendar"></i>
-                <time class="date-time"></time>
-              </span>
-              <span class="calendary">
-                <i class="fa-solid fa-trophy"></i> <span class="previous-draw-team"></span>
-              </span>
-            </div>
-            </div>
-            <div class="draw-numbers">
-              <ul class="row">
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-                <li class="numbers numbers-result"></li>
-              </ul>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="how-to-bet">
-        <h3 class="title-bet">Como Apostar</h3>
-        <p class="bet-paragraph">
-          A Timemania é a loteria para você que é apaixonado por futebol! Escolha 10 números dentre os 80 disponíveis e um Time do Coração entre os 80 participantes.
-        </p>
-        <p class="bet-paragraph">
-          São sorteados 7 números e um Time do Coração por concurso. Você ganha ao acertar 3, 4, 5, 6 ou 7 números, ou acertando o Time do Coração. Parte da arrecadação é destinada aos clubes de futebol.
-        </p>
-        <span class="draw-day"><strong>Sorteios: Terças, Quintas e Sábados às 20h</strong></span>
-      </section>
-    </main>
+    <main id="html-profile-timemania" class="html-profile"></main>
 
     <footer class="footer">
       <div class="footer-content">

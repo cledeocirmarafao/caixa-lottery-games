@@ -17,7 +17,7 @@
     background-color: var(--light);
     padding: clamp(2rem, 5vh, 4rem);
 
-    .warning-title{
+    .warning-title {
       font-size: 2.5rem;
       font-family: var(--primary-font);
       color: var(--dark);
@@ -25,17 +25,17 @@
       font-weight: 800;
     }
 
-    .warning-description{
-        font-size: clamp(1rem, 5vh, 1.6rem);
-        font-weight: 400;
-        font-family: var(--secondary-font);
-        color: var(--gray-text);
-        width: 100%;
-        padding: clamp(1.5rem, 3vh, 3rem);
-        a{
-          color: var(--main-blue);
-          font-weight: 500;
-        }
+    .warning-description {
+      font-size: clamp(1rem, 5vh, 1.6rem);
+      font-weight: 400;
+      font-family: var(--secondary-font);
+      color: var(--gray-text);
+      width: 100%;
+      padding: clamp(1.5rem, 3vh, 3rem);
+      a {
+        color: var(--main-blue);
+        font-weight: 500;
       }
+    }
   }
 }

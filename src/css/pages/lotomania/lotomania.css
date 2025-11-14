@@ -21,12 +21,12 @@
 }
 
 .previous-draws.lotomania {
-    .previous-draw-result{
-        flex-direction: column;
-    }
+  .previous-draw-result {
+    flex-direction: column;
+  }
   .draw-numbers {
     .row {
-        padding-top: 2rem;
+      padding-top: 2rem;
       width: 100%;
       max-width: 1300px;
       margin: 0 auto;

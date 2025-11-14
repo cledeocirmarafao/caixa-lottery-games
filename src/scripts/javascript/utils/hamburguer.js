@@ -1,5 +1,5 @@
 function hamburguer() {
-  const toggleBtn = document.querySelector(".navbar-toggle");  
+  const toggleBtn = document.querySelector(".navbar-toggle");
   const menu = document.getElementById("navbar-menu");
 
   const links = document.querySelectorAll(".navbar-link");
@@ -16,7 +16,7 @@ function hamburguer() {
     });
   });
 
-    document.addEventListener("click", (e) => {
+  document.addEventListener("click", (e) => {
     if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
       toggleBtn.classList.remove("active");
       menu.classList.remove("active");

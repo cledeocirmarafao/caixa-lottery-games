@@ -23,7 +23,7 @@
       margin: 0 auto;
       background-color: var(--beige);
       border: 0.1rem solid var(--border);
-      
+
       border-radius: 1rem;
       padding: 2rem;
       box-shadow: 0 4px 6px var(--gray-text);
@@ -58,8 +58,8 @@
         margin-bottom: clamp(1rem, 5vw, 3rem);
         margin-top: clamp(0.5rem, 1.5vw, 1rem);
 
-        .date{
-            font-weight: 600;
+        .date {
+          font-weight: 600;
         }
       }
     }
@@ -82,42 +82,41 @@
       &:hover {
         background-color: var(--reserve-blue);
         color: var(--light);
-        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s all ;
+        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s all;
 
-        i{
+        i {
           transform: translate(5px);
           transition: 0.5s all;
         }
       }
 
-      i{
-       padding-left: 0.5rem;
+      i {
+        padding-left: 0.5rem;
       }
     }
   }
 
   .cards.mega-sena {
     border-top: inset 1rem var(--mega-sena);
-}
+  }
 
-.cards.quina {
+  .cards.quina {
     border-top: inset 1rem var(--quina);
-}
+  }
 
-.cards.lotofacil {
+  .cards.lotofacil {
     border-top: inset 1rem var(--lotofacil);
-}
+  }
 
-.cards.lotomania {
+  .cards.lotomania {
     border-top: inset 1rem var(--lotomania);
-}
+  }
 
-.cards.dupla-sena {
+  .cards.dupla-sena {
     border-top: inset 1rem var(--dupla-sena);
-}
+  }
 
-.cards.timemania {
+  .cards.timemania {
     border-top: inset 1rem var(--timemania);
-}
-  
+  }
 }

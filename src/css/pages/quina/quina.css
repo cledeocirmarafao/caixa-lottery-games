@@ -1,23 +1,23 @@
-.contest-result.quina{
-   .result-numbers{
-     .numbers{
-        background-color: var(--quina-number);
+.contest-result.quina {
+  .result-numbers {
+    .numbers {
+      background-color: var(--quina-number);
     }
-   }
+  }
 
-   .winner-prize{
-    .prize{
-        .prize-amount{
-            color: var(--quina-number);
-        }
+  .winner-prize {
+    .prize {
+      .prize-amount {
+        color: var(--quina-number);
+      }
     }
-   }
+  }
 }
 
-.previous-draws.quina{
-    .draw-numbers{
-        .numbers{
-            background-color: var(--quina-number);
-        }
+.previous-draws.quina {
+  .draw-numbers {
+    .numbers {
+      background-color: var(--quina-number);
     }
+  }
 }

@@ -17,8 +17,7 @@ async function getDuplasena() {
     document.getElementById("duplasena-contest-number").textContent =
       dataDuplaSena.contest;
 
-    document.getElementById("duplasena-date").textContent =
-      dataDuplaSena.date;
+    document.getElementById("duplasena-date").textContent = dataDuplaSena.date;
 
     const listDuplaSena = document.getElementById("first-list-draw");
     const setDuplaList = listDuplaSena.getElementsByTagName("li");

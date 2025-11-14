@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 2.5rem 1rem;
-    font-size: clamp(1rem, 2vw, 1.rem);
+    font-size: clamp(1rem, 2vw, 1rem);
     border-top: 1px solid var(--border);
 
     .footer-title {
@@ -56,7 +56,7 @@
       align-items: center;
       justify-content: center;
       margin: 0 0.5rem;
-      
+
       &:hover {
         color: var(--beige);
         background-color: var(--main-blue);
@@ -87,13 +87,13 @@
     }
   }
 
-  .author{
+  .author {
     font-family: var(--primary-font);
     color: var(--gray-text);
     text-align: center;
-    
-    a{
-        color: var(--main-blue);
+
+    a {
+      color: var(--main-blue);
     }
   }
 }

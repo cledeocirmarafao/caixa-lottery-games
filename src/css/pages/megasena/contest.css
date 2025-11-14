@@ -11,15 +11,14 @@
     border-radius: 50%;
   }
 
-  .title{
-
+  .title {
     font-family: var(--primary-font);
     font-size: clamp(2rem, 8vh, 5rem);
     font-weight: 800;
     color: var(--dark);
   }
 
-  .text{
+  .text {
     font-family: var(--secondary-font);
     font-size: clamp(1rem, 3vh, 2.5rem);
     padding: 1rem 0 2rem 0;

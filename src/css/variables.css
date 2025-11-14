@@ -1,12 +1,17 @@
 :root {
-  --background: linear-gradient(175deg,rgba(235, 235, 235, 1) 0%, rgba(240, 240, 240, 1) 50%, rgba(245, 240, 240, 1) 100%);
+  --background: linear-gradient(
+    175deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(240, 240, 240, 1) 50%,
+    rgba(245, 240, 240, 1) 100%
+  );
 
   --main-blue: hsl(220, 100%, 33%);
   --reserve-blue: hsl(220, 100%, 40%);
   --light-blue: hsl(155, 26%, 91%);
   --border-blue: hsl(173, 31%, 80%);
   --light-border-blue: hsl(173, 56%, 94%);
-  --bg-light-blue:  hsl(180, 10%, 89%);
+  --bg-light-blue: hsl(180, 10%, 89%);
   --gray-text: hsl(240, 9%, 38%);
   --dark-gray-text: hsl(220, 14%, 36%);
   --light-gray-text: hsl(224, 24%, 90%);
@@ -14,10 +19,9 @@
   --beige: hsl(25, 83%, 97%);
   --light-beige: hsl(20, 33%, 96%);
   --main-title: hsl(215, 28%, 17%);
-  --dark: hsl(215, 16%, 12%); 
+  --dark: hsl(215, 16%, 12%);
   --very-dark: hsl(210, 18%, 4%);
-  --highlight:  hsl(200, 60%, 99%);
-
+  --highlight: hsl(200, 60%, 99%);
 
   --border: hsla(220, 7%, 84%, 0.557);
   --dark-border: hsla(220, 4%, 72%, 0.557);
@@ -33,10 +37,9 @@
   --lotomania-number: hsl(19, 100%, 53%);
   --timemania: hsl(122, 100%, 50%);
   --timemania-number: hsl(122, 95%, 30%);
- --dupla-sena: hsl(0, 84%, 43%);
- --dupla-number: hsl(0, 81%, 33%);
+  --dupla-sena: hsl(0, 84%, 43%);
+  --dupla-number: hsl(0, 81%, 33%);
 
-  --primary-font: 'Nunito Sans', sans-serif;
-  --secondary-font: 'Open Sans', sans-serif;
-
+  --primary-font: "Nunito Sans", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
 }
