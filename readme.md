@@ -81,7 +81,7 @@ Dentro da API existem outros recursos que não foram utilizados neste Desenvolvi
 
 | 💻 Desktop | 🔵 Atividade | 📲 Mobile | 
 |------------|----------------|-----------|
-|![Preview Desktop](./src/images/for-readme.jpg) | ![Preview Estado Ativo](./src/images/atividade.gif) | ![Preview Mobile](./src/images/atividade-mobile.gif) |
+|![Preview Desktop](./src/assets/images/layout-inicial.jpg) | ![Preview Estado Ativo](./src/assets/images/estados-ativos.gif) | ![Preview Mobile](./src/assets/images/mobile.gif) |
 
 ---
 
