@@ -99,10 +99,10 @@ Dentro da API existem outros recursos que não foram utilizados neste Desenvolvi
 
 ```bash
 # Clone o repositório
-git clone https://github.com/cledeocirmarafao/fetch-api-github.git
+git clone https://github.com/cledeocirmarafao/caixa-lottery-games.git
 
 # Acesse a pasta do projeto
-cd fetch-api-github
+cd caixa-lottery-games
 
 # Abra o VSCODE
 code .
